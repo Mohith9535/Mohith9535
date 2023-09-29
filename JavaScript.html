@@ -7,14 +7,15 @@
 </head>
 <body>
     <h1 style="color: blue;">My First Web Page</h1>
-    <p id="p1"></p>
-    <p id="p2"></p>
+    <p id="p1"> A Paragraph!</p>
+    <div id="div1">A DIV</div>
+    <p>
+        <button type="button" onclick="myFunc()">Go!!</button>
+    </p>
     <script>
-        a=1;
-        b=2;
-        c=a+b;
-        document.getElementById("p1").innerHTML=c;
-        j=1;k=2;l=j+k;
-        document.getElementById("p2").innerHTML=l;
+        function myFunc() {
+            document.getElementById("p1").innerHTML="Hello How Are You?";
+            document.getElementById("div1").innerHTML="Hello DIV!!";
+        }
     </script>
 </body>
