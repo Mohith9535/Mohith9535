@@ -6,21 +6,8 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <p>Enter the number between 1 and 10</p>
-    <input id="inputNumber" type="text"/>
-    <button type="button" onclick="checkNumber()">Check Number</button>
-    <p id="message"></p>
+    <p id="message">Hello JavaScript</p>
     <script>
-        function checkNumber() {
-            var x,text;
-            x=document.getElementById("inputNumber").value;
-            if(isNaN(x) || x<1 || x>10) {
-                text="Not Valid!!!";
-            }
-            else{
-                text="valid!!!";
-            }
-            document.getElementById("message").innerHTML = text;
-        }
+        document.getElementById("message").innerHTML="Modified Paragraph!!";
     </script>
 </body>
