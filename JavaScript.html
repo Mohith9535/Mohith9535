@@ -12,8 +12,9 @@
         var person={
             firstName:"Erica",
             lastName:"David",
-            age:30
+            age:30,
+            fullname:function() {return this.firstName+" "+this.lastName}
         };
-        document.getElementById("p1").innerHTML=person.firstName+" is "+person.age+" Year old";
+        document.getElementById("p1").innerHTML=person.fullname()+" is "+person.age+" Year old";
     </script>
 </body>
