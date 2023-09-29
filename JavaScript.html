@@ -7,15 +7,13 @@
 </head>
 <body>
     <h1 style="color: blue;">My First Web Page</h1>
-    <p id="p1"> A Paragraph!</p>
-    <div id="div1">A DIV</div>
-    <p>
-        <button type="button" onclick="myFunc()">Go!!</button>
-    </p>
+    <p id="p1"></p>
     <script>
-        function myFunc() {
-            document.getElementById("p1").innerHTML="Hello How Are You?";
-            document.getElementById("div1").innerHTML="Hello DIV!!";
-        }
+        var person={
+            firstName:"Erica",
+            lastName:"David",
+            age:30
+        };
+        document.getElementById("p1").innerHTML=person.firstName+" is "+person.age+" Year old";
     </script>
 </body>
