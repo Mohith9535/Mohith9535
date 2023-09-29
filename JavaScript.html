@@ -9,12 +9,9 @@
     <h1 style="color: blue;">My First Web Page</h1>
     <p id="p1"></p>
     <script>
-        var person={
-            firstName:"Erica",
-            lastName:"David",
-            age:30,
-            fullname:function() {return this.firstName+" "+this.lastName}
-        };
-        document.getElementById("p1").innerHTML=person.fullname()+" is "+person.age+" Year old";
+        function addition(a,b){
+            return a+b;
+        }
+        document.getElementById("p1").innerHTML=addition(20,10);
     </script>
 </body>
