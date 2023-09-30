@@ -8,14 +8,9 @@
 <body>
     <h1 style="color: blue;">My First Web Page</h1>
     <p id="p1">Hello, how are you ?</p>
-    <button onclick="Stringmanip()">Get String Position</button>
-    <p id="posi"></p>
     <script>
-        function Stringmanip() {
-            var str = document.getElementById("p1").innerHTML;
-            var pos = str.indexOf("how");
-            document.getElementById("posi").innerHTML=pos;
-        }
+        var str = "Hello how are you!";
+        document.getElementById("p1").innerHTML=str.slice(3,7);
     </script>
 </body>
 </html>
